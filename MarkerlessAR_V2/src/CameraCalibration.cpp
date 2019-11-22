@@ -57,12 +57,12 @@ const cv::Mat_<float>&  CameraCalibration::getDistorsion() const
 
 float& CameraCalibration::fx()
 {
-    return m_intrinsic(1,1);
+    return m_intrinsic(0,0);
 }
 
 float& CameraCalibration::fy()
 {
-    return m_intrinsic(0,0);
+    return m_intrinsic(1,1);
 }
 
 float& CameraCalibration::cx()
@@ -77,12 +77,12 @@ float& CameraCalibration::cy()
 
 float CameraCalibration::fx() const
 {
-    return m_intrinsic(1,1);
+    return m_intrinsic(0,0);
 }
 
 float CameraCalibration::fy() const
 {
-    return m_intrinsic(0,0);
+    return m_intrinsic(1,1);
 }
 
 float CameraCalibration::cx() const
